@@ -5,16 +5,15 @@ using UnityEngine;
 public class ToolsCharacterControler : MonoBehaviour
 {
     
-    CharacterController characer;
+    CharacterMovement character;
     Rigidbody2D rgbd2d;
+
     [SerializeField] float offsetDistance = 1f;
     [SerializeField] float sizeOfInteractavleArea  = 1.2f;
 
     private void Awake() {
-        characer = GetComponent<CharacterController>();
+        character = GetComponent<CharacterMovement>();
         rgbd2d = GetComponent<Rigidbody2D>();
-
-       
 
     }
     // Start is called before the first frame update
@@ -32,6 +31,17 @@ public class ToolsCharacterControler : MonoBehaviour
     }
 
     private void UseTool() {
-       
+        Vector2 position = rgbd2d.position + character.lastMotionVector * offsetDistance;
+
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractavleArea);
+
+        foreach (Collider2D c in colliders) {
+
+            ToolHit hit = c.GetComponent<ToolHit>();
+            if (hit != null) {
+                hit.Hit();
+                break;
+            }
+        }
     }
 }
