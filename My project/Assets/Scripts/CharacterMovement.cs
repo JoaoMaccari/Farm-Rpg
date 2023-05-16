@@ -12,6 +12,8 @@ public class CharacterMovement : MonoBehaviour
     Animator animator;
     public bool moving;
 
+    
+
     void Awake() {
         rigidbody2d = GetComponent<Rigidbody2D>();   
         animator = GetComponent<Animator>();    
@@ -27,7 +29,11 @@ public class CharacterMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        motionVector = new Vector2(horizontal, vertical);
+        motionVector = new Vector2(
+            horizontal,
+            vertical
+            );
+
         animator.SetFloat("horizontal", horizontal);
         animator.SetFloat("vertical", vertical);
 
