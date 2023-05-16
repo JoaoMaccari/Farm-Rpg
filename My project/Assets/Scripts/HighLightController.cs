@@ -27,8 +27,8 @@ public class HighLightController : MonoBehaviour
         //caso contrario a variavel recebe o objeto que foi passado no parametro (verificado pelo metodo check)
         currentTarget = target;
 
-        //Pega a posição do objeto
-        Vector3 position = target.transform.position;
+        //Pega a posição um pouco acima do objeto para indicar onde a seta vai aparecer
+        Vector3 position = target.transform.position + Vector3.up * 0.5f;
 
         //chama o metodo com outra sobrecarga passando a posição do objeto
         Highlight(position);
