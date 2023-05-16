@@ -7,7 +7,6 @@ public class LootContainerInteractable : Interactable
     [SerializeField] GameObject closedChest;
     [SerializeField] GameObject openedChest;
     [SerializeField] bool opened;
-
     public override void Interact(Character character) {
 
         if (opened == false) {
