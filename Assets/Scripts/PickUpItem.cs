@@ -20,6 +20,14 @@ public class PickUpItem : MonoBehaviour
         player = GerenciadorGame.instance.player.transform;
     }
 
+    public void Set(Item item, int count) {
+        this.item = item;
+        this.count = count; 
+
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.sprite = item.icon;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -15,28 +15,10 @@ MonoBehaviour:
   slots:
   - item: {fileID: 11400000, guid: 69492afafbcdf0f48ae92ceab96d4c80, type: 2}
     count: 16
-  - item: {fileID: 11400000, guid: 8f274094a23106c4eabcda76b066dcc1, type: 2}
-    count: 1
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}
     count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 11400000, guid: 69492afafbcdf0f48ae92ceab96d4c80, type: 2}
-    count: 16
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}
@@ -73,6 +55,24 @@ MonoBehaviour:
     count: 0
   - item: {fileID: 0}
     count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 11400000, guid: 69492afafbcdf0f48ae92ceab96d4c80, type: 2}
+    count: 32
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 11400000, guid: 69492afafbcdf0f48ae92ceab96d4c80, type: 2}
+    count: 15
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}
