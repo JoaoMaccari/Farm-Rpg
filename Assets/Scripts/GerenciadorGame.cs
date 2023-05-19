@@ -12,5 +12,7 @@ public class GerenciadorGame : MonoBehaviour
     }
 
     public GameObject player;
+    public ItemContainer inventoryContainer;
+    public ItemDragAndDropController dragAndDropController;
 
 }
