@@ -5,8 +5,12 @@ using UnityEngine;
 public class TreeCutabble : ToolHit {
 
     [SerializeField] GameObject pickUpDrop;
-    [SerializeField] int dropCount = 5;
+    
     [SerializeField] float spread = 0.7f;
+
+    [SerializeField] Item item;
+    [SerializeField] int itemCountInOneDrop =1;
+    [SerializeField] int dropCount = 5;
 
     public override void Hit() {
 
@@ -18,8 +22,11 @@ public class TreeCutabble : ToolHit {
             position.x += spread * UnityEngine.Random.value - spread / 2;
             position.y += spread * UnityEngine.Random.value - spread / 2;
 
-            GameObject go = Instantiate(pickUpDrop);
-            go.transform.position = position;
+            ItemSpawnerManager.Instance.SpawnItem(position, item, itemCountInOneDrop);
+
+           // GameObject go = Instantiate(pickUpDrop);
+            //go.GetComponent<PickUpItem>().Set(item, itemCountInOneDrop);
+            //go.transform.position = position;
         }
 
         Destroy(gameObject);

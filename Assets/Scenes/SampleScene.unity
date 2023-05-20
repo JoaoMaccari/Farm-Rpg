@@ -2829,8 +2829,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpDrop: {fileID: 2342493663721713799, guid: 14489be92698bdc49bfa00e7429abaab, type: 3}
-  dropCount: 15
   spread: 0.7
+  item: {fileID: 11400000, guid: 69492afafbcdf0f48ae92ceab96d4c80, type: 2}
+  itemCountInOneDrop: 1
+  dropCount: 15
 --- !u!224 &972500143 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1731376457176266194, guid: ce73e64d5cf8996499d622d1cd058963, type: 3}
